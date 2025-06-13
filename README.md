@@ -1,2 +1,2 @@
-# team.8-website
+# class-2.team.8-website
 cs-演習のチーム実習で制作するwebページ
