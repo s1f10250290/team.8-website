@@ -26,3 +26,12 @@ h1 {
     width: 75px;
     height: auto;
 }
+
+.slide{
+    width: 100px;
+    height: 500px;
+}
+
+.flex{
+    display: flex;
+}
