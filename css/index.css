@@ -1,6 +1,8 @@
 h1 {
     size: 30px;
     text-align: center;
+    font-family: serif;
+
 }
 
 .box{
@@ -27,11 +29,35 @@ h1 {
     height: auto;
 }
 
-.slide{
-    width: 100px;
-    height: 500px;
+.img{
+    width: 75px;
+    height:auto;
 }
 
 .flex{
     display: flex;
+}
+
+/* slide-container は、画像を重ねるための基準となる */
+.slide-container {
+    position: relative; /* 子要素のposition: absoluteの基準となる */
+    top: 100px;
+    width: 600px; /* スライドショーの幅を適切に設定 */
+    height: 400px; /* スライドショーの高さを適切に設定 */
+    overflow: hidden; /* コンテナからはみ出る部分を隠す */
+}
+
+.slide-img {
+    position: absolute; /* 親要素に対して絶対配置 */
+    top: 0;
+    left: 0;
+    width: 100%; /* コンテナの幅に合わせる */
+    height: 100%; /* コンテナの高さに合わせる */
+    opacity: 0; /* 最初はすべて非表示 */
+    transition: opacity 1s ease-in-out; /* フェードイン・アウトのアニメーション */
+    object-fit: cover; /* 画像がコンテナに収まるように調整 */
+}
+
+.slide-img.active {
+    opacity: 1; /* activeクラスが付いている画像だけ表示 */
 }
