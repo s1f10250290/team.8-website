@@ -1,0 +1,15 @@
+.box{
+    display: block
+}
+
+.flex{
+    display:flex
+}
+
+h2{
+    color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    margin: 10px 0px 10px 10px;
+    
+}
