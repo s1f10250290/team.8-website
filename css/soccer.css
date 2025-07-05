@@ -1,0 +1,15 @@
+.box{
+    display: block
+}
+
+.flex{
+    display:flex
+}
+
+h2{
+    color: rgb(55, 126, 184);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(254, 254, 254);
+    margin: 10px 0px 10px 10px;
+    
+}
